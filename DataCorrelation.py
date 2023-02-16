@@ -73,7 +73,7 @@ plt.ylabel('Gross Earnings')
 plt.xlabel('Budget for Film')
 
 plt.show()
-image1.png
+
 
 # Regression Plot (refer to image2)
 
