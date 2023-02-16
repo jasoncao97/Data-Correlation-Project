@@ -66,6 +66,7 @@ excel.save()
 
 
 # Scatter Plot (refer to image1)
+# https://github.com/jasoncao97/Data-Correlation-Project/blob/cf4d96a5886be9adba3d6c0e2778800d22bf00bc/image1.png
 
 plt.scatter(x=df['budget'],y=df['gross'])
 plt.title('Gross Earnings vs Budget')
@@ -76,12 +77,14 @@ plt.show()
 
 
 # Regression Plot (refer to image2)
+# https://github.com/jasoncao97/Data-Correlation-Project/blob/cf4d96a5886be9adba3d6c0e2778800d22bf00bc/image2.png
 
 sns.regplot(x=df['budget'].astype(int),y= df['gross'].astype(int), line_kws= {'color':'blue'})
 plt.show()
 
 
 # Correlation - Heat Map (refer to image3)
+# https://github.com/jasoncao97/Data-Correlation-Project/blob/cf4d96a5886be9adba3d6c0e2778800d22bf00bc/image3.png
 
 correlation_matrix = df.corr()
 sns.heatmap(correlation_matrix, annot=True)
@@ -93,6 +96,7 @@ plt.show()
 
 
 # Assigning Numeric Value for Each Unique Categorical Value (refer to image4)
+#https://github.com/jasoncao97/Data-Correlation-Project/blob/cf4d96a5886be9adba3d6c0e2778800d22bf00bc/image4.png
 
 df_numerized = df
 
@@ -110,6 +114,7 @@ plt.ylabel('Movie Features')
 plt.show()
 
 # Looking at Pairs With a High Correlation (> 0.5) (refer to image5)
+# https://github.com/jasoncao97/Data-Correlation-Project/blob/cf4d96a5886be9adba3d6c0e2778800d22bf00bc/image5.png
 
 correlation_mat = df_numerized.corr()
 corr_pairs = correlation_mat.unstack()
